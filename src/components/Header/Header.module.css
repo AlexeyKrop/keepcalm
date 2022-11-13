@@ -1,0 +1,47 @@
+.wrapper {
+    background: linear-gradient(0deg, #464341 0%, #010101 100%);
+}
+
+.content {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1397px;
+    min-height: 100px;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    min-height: inherit;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    list-style-type: none;
+}
+
+.phone {
+    font-size: 24px;
+    line-height: 33px;
+
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.icon {
+    display: none;
+}
+
+@media (max-width: 576px) {
+    .list{
+        padding: 0 20px;
+    }
+    .icon {
+        display: block;
+    }
+
+    .phone {
+        display: none;
+    }
+}
