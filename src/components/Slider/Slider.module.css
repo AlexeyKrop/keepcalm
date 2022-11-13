@@ -1,0 +1,22 @@
+.wrapper {
+    width: 100%;
+    max-width: 1323px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 160px 0 160px auto;
+}
+
+.title {
+    margin: 0 0 123px 0;
+    font-size: 48px;
+    line-height: 110%;
+
+    color: #141414;
+}
+
+.image {
+    width: 320px;
+    height: 488px;
+}

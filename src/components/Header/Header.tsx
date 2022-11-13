@@ -1,6 +1,7 @@
 import {FC} from "react";
 import logo from '../../assets/logo.png'
 import s from './Header.module.css'
+import phone from '../../assets/phoneIcon.png'
 
 export const Header: FC = () => {
   return (
@@ -13,7 +14,9 @@ export const Header: FC = () => {
             </a></li>
           <li>
             <a className={s.phone} href="tel: +7 (495) 495-49-54">+7 (495) 495-49-54</a>
-            <div className={s.icon}>icon</div>
+            <a className={s.phoneMobile} href="tel: +7 (495) 495-49-54"><img src={phone}
+                                                                       alt={'phone'}
+                                                                       className={s.icon}/></a>
           </li>
         </ul>
       </div>
