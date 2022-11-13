@@ -21,13 +21,24 @@ export const Slider = () => {
       <Swiper
         direction={"horizontal"}
         pagination={{
-          clickable: true,
+          clickable: false,
         }}
+        allowTouchMove={true}
+        autoHeight={true}
         modules={[Mousewheel, Pagination]}
         className="mySwiper"
         spaceBetween={40}
-        slidesPerView={3.5}
         mousewheel={true}
+        breakpoints={{
+          320: {
+            slidesPerView: 1.5,
+            spaceBetween: 20,
+            mousewheel: false
+          },
+          1200:{
+            slidesPerView: 3.5,
+          }
+        }}
       >
         {sliderImages.map((image, index) => <SwiperSlide key={index}><img src={image}
                                                                           className={s.image}
