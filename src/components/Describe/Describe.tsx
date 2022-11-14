@@ -15,7 +15,7 @@ type DescribeType = {
 export const Describe: FC<DescribeType> = ({topContent, bottomContent}) => {
   return (
     <>
-      <h1 className={s.title}>ut aliquip ex ea commodo consequat</h1>
+      <h2 className={s.title}>ut aliquip ex ea commodo consequat</h2>
       <div className={s.wrapper}>
         <div className={s.contentTop}>
           <img className={s.imageTop} src={topContent.src}
